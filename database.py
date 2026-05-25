@@ -102,7 +102,7 @@ def transfer_money(sender_acc, receiver_acc, amount_str):
         )
         
         conn.commit()
-        return True, "Die Übersetzung wurde erfolgreich abgeschlossen."
+        return True, "Die Überweisung wurde erfolgreich abgeschlossen."
         
     except Exception as e:
         conn.rollback()
