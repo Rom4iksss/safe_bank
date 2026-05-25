@@ -42,7 +42,7 @@ def main():
                 print("Fehler: Der Name darf nicht leer sein.")
                 continue
                 
-            deposit_input = input("Geben Sie den Betrag der ersten Rate ein (z. B. 500,00): ").strip()
+            deposit_input = input("Geben Sie den Betrag der ersten Rate ein (z. B. 500.00): ").strip()
             try:
                 # Проверяем, что введено корректное число
                 deposit = Decimal(deposit_input)
@@ -55,7 +55,7 @@ def main():
                 print(f" Erfolg! Das Konto Nr. {acc_num} für den Kunden {name} wurde angelegt.")
                 logging.info(f"Das Konto Nr. {acc_num} ({name}) mit einem Guthaben von {deposit} EUR wurde eingerichtet")
             except InvalidOperation:
-                print("Fehler: Falsches Format für den Betrag. Verwenden Sie einen Punkt als Trennzeichen (z. B. 100,50).")
+                print("Fehler: Falsches Format für den Betrag. Verwenden Sie einen Punkt als Trennzeichen (z. B. 100.50).")
                 
         elif choice == "2":
             try:
