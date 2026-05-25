@@ -93,7 +93,7 @@ def main():
                     logging.info(f"Erfolgreiche Überweisung: Konto {sender} -> Konto {receiver} | Betrag: {amount} EUR")
                 else:
                     print(f" Transaktionsfehler: {message}")
-                    logging.warning(f"Übersetzungsfehler: {sender} -> {receiver} | Grund: {message}")
+                    logging.warning(f"Überweisungsfehler: {sender} -> {receiver} | Grund: {message}")
             except InvalidOperation:
                 print("Fehler: Das Format des Überweisungsbetrags ist falsch.")
             except ValueError:
